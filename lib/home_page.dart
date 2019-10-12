@@ -13,8 +13,12 @@ class HomePageState extends State<HomePage>{
         title: new Text("MyCalculator"),
       ),
       body: new Container(
-        child: new Center(
-          child: new Text("Calculator App"),
+        child: new Column(
+          children: <Widget>[
+            new TextField(
+              keyboardType: TextInputType.number,
+            )
+          ],
         ),
       ),
 
