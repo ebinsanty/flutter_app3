@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget{
@@ -13,11 +14,47 @@ class HomePageState extends State<HomePage>{
         title: new Text("MyCalculator"),
       ),
       body: new Container(
+        padding: const EdgeInsets.all(40.0),
         child: new Column(
+
+          mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             new TextField(
               keyboardType: TextInputType.number,
-            )
+              decoration: new InputDecoration(
+                hintText: "Enter the number"
+              ),
+            ),
+            new TextField(
+              keyboardType: TextInputType.number,
+              decoration: new InputDecoration(
+                  hintText: "Enter the number"
+              ),
+            ),
+            new Padding(
+                padding: const EdgeInsets.only(top:20.0),
+            ),
+            new Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                new RaisedButton(
+                  child: new Text("+"),
+                    onPressed: () {},
+                ),
+                new RaisedButton(
+                  child: new Text("/"),
+                  onPressed: () {},
+                ),
+                new RaisedButton(
+                  child: new Text("-"),
+                  onPressed: () {},
+                ),
+                new RaisedButton(
+                  child: new Text("*"),
+                  onPressed: () {},
+                ),
+              ],
+            ),
           ],
         ),
       ),
