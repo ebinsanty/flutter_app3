@@ -14,7 +14,7 @@ class HomePageState extends State<HomePage>{
       ),
       body: new Container(
         child: new Center(
-          child: new Text("Calculator App"),
+          child: new Text("Calculator "),
         ),
       ),
 
