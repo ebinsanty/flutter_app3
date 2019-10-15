@@ -42,17 +42,24 @@ class HomePageState extends State<HomePage>{
                     onPressed: () {},
                 ),
                 new RaisedButton(
-                  child: new Text("/"),
-                  onPressed: () {},
-                ),
-                new RaisedButton(
                   child: new Text("-"),
                   onPressed: () {},
                 ),
+
+              ],
+            ),
+            new Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
                 new RaisedButton(
                   child: new Text("*"),
                   onPressed: () {},
                 ),
+                new RaisedButton(
+                  child: new Text("/"),
+                  onPressed: () {},
+                ),
+
               ],
             ),
           ],
