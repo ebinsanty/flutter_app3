@@ -35,28 +35,33 @@ class HomePageState extends State<HomePage>{
                 padding: const EdgeInsets.only(top:20.0),
             ),
             new Row(
-              mainAxisAlignment: MainAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: <Widget>[
-                new RaisedButton(
+                new MaterialButton(
                   child: new Text("+"),
+                    color: Colors.greenAccent,
                     onPressed: () {},
                 ),
-                new RaisedButton(
-                  child: new Text("-"),
+                new MaterialButton(
+                  child: new Text("+"),
+                  color: Colors.greenAccent,
                   onPressed: () {},
                 ),
+
 
               ],
             ),
             new Row(
-              mainAxisAlignment: MainAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: <Widget>[
-                new RaisedButton(
-                  child: new Text("*"),
+                new MaterialButton(
+                  child: new Text("+"),
+                  color: Colors.greenAccent,
                   onPressed: () {},
                 ),
-                new RaisedButton(
-                  child: new Text("/"),
+                new MaterialButton(
+                  child: new Text("+"),
+                  color: Colors.greenAccent,
                   onPressed: () {},
                 ),
 
