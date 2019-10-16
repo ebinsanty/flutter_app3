@@ -19,6 +19,12 @@ class HomePageState extends State<HomePage>{
 
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            new Text("Output :",
+            style: new TextStyle(
+              fontSize: 20.0,
+              color: Colors.purple
+            ),
+            ),
             new TextField(
               keyboardType: TextInputType.number,
               decoration: new InputDecoration(
