@@ -2,10 +2,14 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget{
+
+
+
   @override
   State createState() => new HomePageState();
 }
 class HomePageState extends State<HomePage>{
+  var num1,num2,sum;
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
@@ -22,6 +26,7 @@ class HomePageState extends State<HomePage>{
             new Text("Output :",
             style: new TextStyle(
               fontSize: 20.0,
+              fontWeight: FontWeight.bold,
               color: Colors.purple
             ),
             ),
@@ -34,7 +39,7 @@ class HomePageState extends State<HomePage>{
             new TextField(
               keyboardType: TextInputType.number,
               decoration: new InputDecoration(
-                  hintText: "Enter the number"
+                  hintText: "Enter the second number "
               ),
             ),
             new Padding(
