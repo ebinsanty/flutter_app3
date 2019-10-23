@@ -9,7 +9,7 @@ class HomePage extends StatefulWidget{
   State createState() => new HomePageState();
 }
 class HomePageState extends State<HomePage>{
-  var num1,num2,sum;
+  var num1=0,num2=0,sum=0;
   final TextEditingController t1=new TextEditingController(text:"0");
   final TextEditingController t2=new TextEditingController(text:"0");
   void doAdd(){
@@ -32,7 +32,7 @@ class HomePageState extends State<HomePage>{
 
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            new Text("Output :$sum",
+            new Text("Output : $sum",
             style: new TextStyle(
               fontSize: 20.0,
               fontWeight: FontWeight.bold,
