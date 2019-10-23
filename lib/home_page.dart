@@ -10,6 +10,15 @@ class HomePage extends StatefulWidget{
 }
 class HomePageState extends State<HomePage>{
   var num1,num2,sum;
+  final TextEditingController t1=new TextEditingController(text:"0");
+  final TextEditingController t2=new TextEditingController(text:"0");
+  void doAdd(){
+    setState(() {
+      num1=int.parse(t1.text);
+      num2=int.parse(t2.text);
+      sum=num1+num2;
+    });
+  }
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
@@ -23,7 +32,7 @@ class HomePageState extends State<HomePage>{
 
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            new Text("Output :",
+            new Text("Output :$sum",
             style: new TextStyle(
               fontSize: 20.0,
               fontWeight: FontWeight.bold,
@@ -35,12 +44,14 @@ class HomePageState extends State<HomePage>{
               decoration: new InputDecoration(
                 hintText: "Enter the number"
               ),
+              controller: t1,
             ),
             new TextField(
               keyboardType: TextInputType.number,
               decoration: new InputDecoration(
                   hintText: "Enter the second number "
               ),
+              controller: t2,
             ),
             new Padding(
                 padding: const EdgeInsets.only(top:20.0),
